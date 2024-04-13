@@ -1,15 +1,56 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+<h1>this is dashboard</h1>
+
+<table class='table' >
+<tr>
+    <th>رقم الرسالة</th>
+    <th>الاسم</th>
+    <th>نوع الرسالة</th>
+    <th>الحالة</th>
+    <th>تغيير الحالة</th>
+    <th>فتح الرسالة</th>
+  </tr>
+
+  @foreach($data as $item)
+  <tr>
+    <th>{{$item->id}}</th>
+    <th>{{$item->name}}</th>
+
+    @if($item->type == 0)
+    <th>تواصل</th>
+    
+    @elseif($item->type==1)
+        <th>اقتراح</th>
+    
+    @endif
+
+
+    @if($item->read==0)
+    <th>غير مقروؤة</th>
+    @else
+    <th>مقروؤة</th>
+    @endif
+    <th>
+    <a href="changeStatus/{{$item->id}}">تغيير حالة الرسالة</a>
+    </th>
+
+    <th>
+
+    <a href="message/{{$item->id}}">فتح الرسالة</a>
+    </th>
+  </tr>
+@endforeach
+
+
+</table>
+</body>
+</html>
