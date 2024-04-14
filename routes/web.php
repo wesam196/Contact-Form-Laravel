@@ -29,6 +29,7 @@ Route::middleware([
     Route::get('/changeStatus/{id}',[dashboard::class,'changeStatus']);
     Route::get('/message/{id}',[dashboard::class,'message']);
     Route::get('/register',[dashboard::class,'register']);
+    Route::post('/createUser',[dashboard::class,'createUser']);
 
 
 

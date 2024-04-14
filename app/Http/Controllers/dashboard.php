@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\contact;
-
+use App\Models\user;
+use Illuminate\Support\Facades\Hash;
 class dashboard extends Controller
 {
     public function index(){
@@ -48,5 +49,16 @@ class dashboard extends Controller
         
         return view('auth.register');
    
+    }
+
+    public function createUser(Request $request){
+      
+         User::create([
+            'name' => $request->name,
+            'email' =>$request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        return redirect('/dashboard');
+  
     }
 }
