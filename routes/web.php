@@ -5,9 +5,19 @@ use App\HTTP\Controllers\dashboard;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('english/home');
 });
 
+Route::get('/hajj', function () {
+    return view('english/Hajj');
+});
+
+Route::get('/landmark', function () {
+    return view('english/landmark');
+});
+Route::get('/umrah', function () {
+    return view('english/Umrah');
+});
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -28,8 +38,8 @@ Route::middleware([
     Route::get('/dashboard',[dashboard::class,'index']);
     Route::get('/changeStatus/{id}',[dashboard::class,'changeStatus']);
     Route::get('/message/{id}',[dashboard::class,'message']);
-    Route::get('/register',[dashboard::class,'register']);
-    Route::post('/createUser',[dashboard::class,'createUser']);
+   // Route::get('/register',[dashboard::class,'register']);
+   // Route::post('/createUser',[dashboard::class,'createUser']);
 
 
 
