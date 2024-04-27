@@ -86,44 +86,7 @@
 </head>
 
 <body>
-  <header>
-    <div class="header">
-        <img class="lgo" src="/img/vecteezy_mecca-for-hajj_.jpg" alt="logo">
-    </div>
-    <nav>
-
-        <li><a href="./index.html" class="active">الصفحة الرئيسية </a></li>
-        <li><a href="./landmark.html">المعالم</a></li>
-        <li><a href="./Hajj.html">الحج </a></li>
-        <li><a href="./Umrah.html">العمرة</a></li>
-
-    </nav>
-    <div class="box">
-      <select>
-        <option>EN</option>
-        <option>AR</option>
- 
-      </select>
-    </div>
-    <div class="show">
-        <div id="open"><i class="fas fa-bars text-white"></i></div>
-        <div id="close"><i class="fas fa-times text-white"></i></div>
-    </div>
-    <div class="menu text-white">
-        <li><a href="./index.html" class="active">الصفحة الرئيسية</a></li>
-        <li><a href="./landmark.html">المعالم</a></li>
-        <li><a href="./Hajj.html">الحج</a></li>
-        <li><a href="./Umrah.html">العمرة</a></li>
-        <div class="box">
-          <select>
-            <option>EN</option>
-            <option>AR</option>
-     
-          </select>
-        </div>
-    
-    </div>
-</header>
+@include('layouts.arheader')
 
   
     <!-- Message  -->
@@ -137,7 +100,7 @@
                    قم بتحميل هذا الملف يحتوي على كافة
                     إرشادات الحج والعمرة ومعالم مكة
                     </h6> 
-              <a href="./src/pdf/Mecca Visitors Guidelines.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
+              <a href="/pdf/Mecca Visitors Guidelines.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
                   تحميل هذا الملف</a>
                 </li>
                 <li> <h6><strong>  رقم الطوارئ</strong> 
@@ -805,6 +768,9 @@ src="https://www.youtube.com/embed/CcyuRgacoww?si=mKpUj_-HWUDaxOhi" title="YouTu
           </div>
           </div>
     </div>
+
+    @include('layouts.arfooter')
+
     <!-------------------------------------------------End section Tawaf $ Saie----------------------------->
     <script>
       var coll = document.getElementsByClassName("collapsible");

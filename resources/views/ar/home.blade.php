@@ -83,45 +83,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <img class="lgo" src="/img/vecteezy_mecca-for-hajj_.jpg" alt="logo">
-        </div>
-        <nav>
-
-            <li><a href="./index.html" class="active">الصفحة الرئيسية</a></li>
-            <li><a href="./landmark.html">معالم مكة</a></li>
-            <li><a href="./Hajj.html">الحج</a></li>
-            <li><a href="./Umrah.html">العمرة</a></li>
-            <li><a href="#contact">تواصل معنا </a></li>
-        </nav>
-        <div class="box">
-            <select>
-              <option>EN</option>
-              <option>AR</option>
-       
-            </select>
-          </div>
-        <div class="show">
-            <div id="open"><i class="fas fa-bars text-white"></i></div>
-            <div id="close"><i class="fas fa-times text-white"></i></div>
-        </div>
-        <div class="menu text-white">
-            <li><a href="./index.html" class="active">الصفحة رئيسية</a></li>
-            <li><a href="./landmark.html">معالم مكة </a></li>
-            <li><a href="./Hajj.html">الحج</a></li>
-            <li><a href="./Umrah.html">العمرة</a></li>
-            <li><a href="#contact"> تواصل معنا</a></li>
-           <div class="box">
-            <select>
-              <option>EN</option>
-              <option>AR</option>
-       
-            </select>
-          </div>
-            
-        </div>
-    </header>
+    @include('layouts.arheader')
     <!-- menu -->
 
     <!-----------------------------------------------end header-------------------------------------------------->
@@ -289,7 +251,8 @@
             <div class="blueBG">
             </div>
             <div class="responsive-container-block container">
-                <form class="form-box">
+            <form class="form-box" method='POST' action='{{url("/addMessage")}}'>
+            @csrf
                     <div class="container-block form-wrapper">
                         <p  class="text-blk contactus-head " >
                            تواصل معنا
@@ -302,7 +265,7 @@
                                 <p  class="text-blk input-title ">
                                     الاسم
                                 </p>
-                                <input class="input" id="ijowk" name="FirstName"
+                                <input class="input" id="ijowk" name="name"
                                     placeholder="أدخل الاسم..." type="text" required />
                             </div>
                             <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
@@ -327,9 +290,9 @@
                                     required></textarea>
                             </div>
                         </div>
-                        <button class="submit-btn">
-                            أرسل الرسالة 
-                        </button>
+                        <input type='submit' value="أرسل الرسالة " class="submit-btn">
+                            
+                        
                     </div>
 
                 </form>
@@ -344,20 +307,7 @@
 
 
     <!-- footer -->
-    <footer>
-        <div class="footer">
-
-            <p class="px-5"> - إذا لم يكن لديك الإنترنت
-                 قم بتحميل هذا الملف الذي يحتوي على كافة
-                 إرشادات الحج والعمرة
-                 معالم مكة </p>
-            <a href="./src/pdf/Mecca Visitors Guidelines.pdf" class="download-button" download><i class="fa-regular fa-file-pdf"></i>
-                تحميل الملف</a>
-
-            <div class="row">
-            </div>
-        </div>
-    </footer>
+            @include('layouts.arfooter')
     <script src="/js/main.js"></script>
     </div>
 </body>

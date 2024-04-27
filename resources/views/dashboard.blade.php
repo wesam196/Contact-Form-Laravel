@@ -8,56 +8,25 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/stylesheet.css" rel="stylesheet">
 
+    <style>
+         .table-container {
+     
+     overflow-x: auto;
+     }
+    </style>
   </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Engish
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Arabic</a></li>
-  
-                        </ul>
-                    </li>
-
-                    <li>
-                    <x-app-layout>
-                            </x-app-layout>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+@include('layouts.header')
 
 
-    <div class="container-icon">
-    <ul class="icon-2 sticky-top">
-      <li><a href="/register"><i class=" bi bi-stopwatch-fill "></i> register</a></li>
-      <li><a href="#"><i class="fas fa-cogs"></i> Ihram</a></li>
-      <li><a href="#"><i class=" fas fa-info-circle"></i> Ihram clothing &amp; Prohibitions</a></li>
-      <li><a href="#"><i class="fas fa-cogs"></i> Determining your Miqats</a></li>
-      <li><a href="#"><i class="fas fa-envelope"></i> Tawaf &amp;Saie</a></li>
-    </ul>
-</div>
 
-<h1>this is dashboard</h1>
 
-<table class='table' >
+<br><br><br><br><br>
+<h1 class="text-center"> Welcome to Dashboard</h1>
+
+<table class='table table-container' >
 <tr>
     <th>Id</th>
     <th>Name</th>

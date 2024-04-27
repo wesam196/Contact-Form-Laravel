@@ -23,44 +23,7 @@
 </head>
 
 <body>
-    <header style="">
-        <div class="header">
-            <img class="lgo" src="/img/vecteezy_mecca-for-hajj_.jpg" alt="logo">
-        </div>
-        <nav>
-
-            <li><a href="./index.html" class="active">الصفحة الرئيسية</a></li>
-            <li><a href="./landmark.html">المعالم</a></li>
-            <li><a href="./Hajj.html">الحج</a></li>
-            <li><a href="./Umrah.html">العمرة</a></li>
-
-        </nav>
-        <div class="box">
-            <select>
-                <option>EN</option>
-                <option>AR</option>
-
-            </select>
-        </div>
-
-        <div class="show">
-            <div id="open"><i class="fas fa-bars text-white"></i></div>
-            <div id="close"><i class="fas fa-times text-white"></i></div>
-        </div>
-        <div class="menu text-white">
-            <li><a href="./index.html" class="active">الصفحة الرئيسية</a></li>
-            <li><a href="./landmark.html">المعالم</a></li>
-            <li><a href="./Hajj.html">الحج</a></li>
-            <li><a href="./Umrah.html">العمرة</a></li>
-            <div class="box">
-                <select>
-                    <option>EN</option>
-                    <option>AR</option>
-
-                </select>
-            </div>
-        </div>
-    </header>
+@include('layouts.arheader')
 
 
 
@@ -391,6 +354,7 @@
 
     <!---------------!end section cards ---------------------->
 
+    @include('layouts.arfooter')
 
 
     <script src="script.js"></script>
