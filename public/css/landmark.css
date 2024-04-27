@@ -11,47 +11,55 @@ body{
 .card__img {
     height: 192px;
     width: 100%;
-    background-image: url("../img/Capture.PNG"); /*Mount Noor*/
+    background-image: url("/../img/jabalalnoor.PNG"); /*Mount Noor*/
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+   
 }
 
 .card__img2 {
     height: 192px;
     width: 100%;
-    background-image: url("https://upload.wikimedia.org/wikipedia/ar/3/38/%D8%AC%D8%A8%D9%84_%D8%AB%D9%88%D8%B1.jpg"); /*Thawr Mount*/
+    background-image: url("/../img/thowr.PNG"); /*Thawr Mount*/
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 
 }
 
 .card__img3 {
     height: 192px;
     width: 100%;
-    background-image: url("../img/Capture.PNG"); /*Hira Cultural District*/
+    background-image: url("../img/hiraa.PNG"); /*Hira Cultural District*/
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
-
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+ 
 }
 .card__img4 {
     height: 192px;
     width: 100%;
-    background-image: url("../img/Capture.PNG"); /*The Mosque of Aishah*/
+    background-image: url("../img/aisha.PNG"); /*The Mosque of Aishah*/
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
 
 }
 .card__img5 {
     height: 192px;
     width: 100%;
-    background-image: url("../img/Capture.PNG"); /*Museums*/
+    background-image: url("../img/musem.PNG"); /*Museums*/
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
 
 }
 

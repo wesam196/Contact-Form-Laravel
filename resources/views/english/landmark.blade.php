@@ -36,7 +36,7 @@
 
         <h1 class="text-page text-center py-5 text-white">Landmarks of Makkah</h1>
         <div class="img-land-page">
-            <img class="img-page" src="img/landmark1.PNG" alt="" srcset="">
+            <img class="img-page" src="/img/landmark1.PNG" alt="" srcset="">
         </div>
         <h3 class="text-center text-white mt-4">Mount Noor (Jabal An-Noor) and the cave of Hira</h3>
         <p>Mount Noor is the place where Allah honored His Prophet Muhammad (blessings and peace be upon him) with

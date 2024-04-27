@@ -23,6 +23,30 @@ Route::get('/contact', function () {
 });
 
 
+
+//////Arabic////////
+
+Route::get('/ar/home', function () {
+    return view('ar/home');
+});
+
+Route::get('/ar/hajj', function () {
+    return view('ar/Hajj');
+});
+
+Route::get('/ar/landmark', function () {
+    return view('ar/landmark');
+});
+Route::get('/ar/umrah', function () {
+    return view('ar/Umrah');
+});
+
+
+
+
+
+
+
 Route::post('/addMessage',[dashboard::class,'addMessage']);
 
 //Route::get('/',  [homeController::class,'index'])->middleware('auth');

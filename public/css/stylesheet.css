@@ -368,7 +368,7 @@ input[type=checkbox]:checked + label {
                 background-image: url("../img/landmark1.PNG"); /*img*/
                 background-repeat: no-repeat;
                 background-size: cover;
-                border-radius: 20px;
+        border-radius: 20px;
             }
 
             .card__img2 {
@@ -515,7 +515,6 @@ background-color: #d5d1cc;
      margin-top: 130px;
     
 }
-
 .collapsible {
 background-color:#d5d1cc;
 color: black;
@@ -524,11 +523,9 @@ padding: 10px;
 width:80%;
 border: #c8c8c8;;
 border-radius:8px;
-text-align: left;
 outline: none;
-font-size: 15px;
-margin-left: 10.5%;
-
+font-size: 17px;
+margin-left: 10.5%; 
 }
 /*
 .active, .collapsible:hover {
@@ -554,12 +551,14 @@ line-height: 140%;
 font-style: normal;
 margin-bottom: 10px;
 }
-.kexixH li {
+.listr li {
 font-size: 13px;
 line-height: 140%;
 font-style: normal;
 list-style: disc;
 margin-bottom: 0.5rem;
+    margin-right: 20px;
+    
 }
 .text-sections {
   float: left;
@@ -572,7 +571,13 @@ margin-bottom: 0.5rem;
     height:230px;
     margin-bottom: 80px;
     margin-top: 40px;}
-
+.kexixH li {
+font-size: 13px;
+line-height: 140%;
+font-style: normal;
+list-style: disc;
+margin-bottom: 0.5rem;
+}
 
     
 
