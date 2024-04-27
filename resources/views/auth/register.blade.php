@@ -5,7 +5,7 @@
 
         <x-validation-errors class="mb-4" />
 
-        <form method="POST" action="{{url('createUser')}}">
+        <form method="POST" action="{{ url('register') }}">
             @csrf
 
             <div>

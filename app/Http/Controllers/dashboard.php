@@ -45,11 +45,7 @@ class dashboard extends Controller
         return view('message' , ['data' =>$data]);
     }
 
-    public function register(){
-        
-        return view('auth.register');
-   
-    }
+ 
 
 
 }

@@ -49,8 +49,11 @@ Route::get('/ar/umrah', function () {
 
 Route::post('/addMessage',[dashboard::class,'addMessage']);
 
-//Route::get('/',  [homeController::class,'index'])->middleware('auth');
 
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
 
 Route::middleware([
     'auth:sanctum',
@@ -62,8 +65,7 @@ Route::middleware([
     Route::get('/dashboard',[dashboard::class,'index']);
     Route::get('/changeStatus/{id}',[dashboard::class,'changeStatus']);
     Route::get('/message/{id}',[dashboard::class,'message']);
-   // Route::get('/register',[dashboard::class,'register']);
-   // Route::post('/createUser',[dashboard::class,'createUser']);
+
 
 
 
