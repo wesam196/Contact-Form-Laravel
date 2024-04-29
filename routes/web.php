@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\dashboard;
 
+//////English////////
 
 Route::get('/', function () {
     return view('english/home');
@@ -51,9 +52,7 @@ Route::post('/addMessage',[dashboard::class,'addMessage']);
 
 
 
-Route::get('/register', function () {
-    return view('auth.register');
-});
+
 
 Route::middleware([
     'auth:sanctum',
@@ -66,7 +65,9 @@ Route::middleware([
     Route::get('/changeStatus/{id}',[dashboard::class,'changeStatus']);
     Route::get('/message/{id}',[dashboard::class,'message']);
 
-
+    Route::get('/register', function () {
+        return view('auth.register');
+    });
 
 
 });
